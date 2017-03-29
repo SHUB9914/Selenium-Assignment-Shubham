@@ -39,9 +39,6 @@ class MyntraSpec extends FlatSpec with MyMyntra {
 
   "user" should "logged in " in {
 
-    //    driver.manage().window().maximize()
-    //    driver.get(BASE_URL)
-
     val dropDown = driver.findElementByCssSelector("div.desktop-user")
     val mouseHover = new Actions(driver)
     mouseHover.moveToElement(dropDown)
